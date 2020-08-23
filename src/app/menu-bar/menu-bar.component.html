@@ -1,0 +1,39 @@
+
+<div class="top-bar">
+  <span class="logo-name">
+    JCNC
+  </span>
+
+  <ng-container *ngFor="let menuItem of modulesList">
+    <ng-container *ngIf="!menuItem.children">
+      <a class="nav-link">
+        <span class="icon fa" [ngClass]="menuItem.icon"></span>
+        <span class="text-holder">{{menuItem.label}}</span>
+      </a>
+    </ng-container>
+    <ng-container *ngIf="menuItem.children.length > 0">
+  <button #button mat-button [matMenuTriggerFor]="levelOne" #levelOneTrigger="matMenuTrigger" (mouseenter)="buttonEnter(levelOneTrigger)" (mouseleave)="buttonLeave(levelOneTrigger, button)" style="z-index:1050">
+        <span class="icon fa" [ngClass]="menuItem.icon"></span>
+        <span>{{menuItem.label}}
+          <i class="fa fa-chevron-down"></i>
+        </span>
+      </button>    
+  
+      <mat-menu #levelOne="matMenu" direction="down" yPosition="below" >
+        <span (mouseenter)="menuenter()" (mouseleave)="menuLeave(levelOneTrigger, button)">
+        <ng-container *ngFor="let childL1 of menuItem.children">
+          <li class="p-0" *ngIf="!childL1.children" mat-menu-item>
+            <a class="nav-link">{{childL1.label}}
+              <i *ngIf="childL1.icon" [ngClass]="childL1.icon"></i>
+            </a>
+          </li>
+          
+        </ng-container>
+        </span>
+      </mat-menu>
+    </ng-container>
+  </ng-container>
+</div>
+
+
+
