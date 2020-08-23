@@ -1,10 +1,18 @@
+.header {
+  height: 80vh;
+  background-image: url(../../assets/edited.JPG);
+  background-size: cover;
+  background-position: top;
+}
+
 .top-bar {
   padding: 2%;
-  background-color: #ecf0f1;
+  background-color: #e67d2283;
+  color: white;
 }
 .top-bar .logo-name {
   font-size: 1.5rem;
-  color: darkblue;
+  color: whitesmoke;
   padding: 3%;
   font-family: fantasy;
 }
