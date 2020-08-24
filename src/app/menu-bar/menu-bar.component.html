@@ -7,10 +7,12 @@
   
     <ng-container *ngFor="let menuItem of modulesList">
       <ng-container *ngIf="!menuItem.children">
-        <a class="nav-link">
+         <button #button mat-button [matMenuTriggerFor]="levelOne" #levelOneTrigger="matMenuTrigger" (mouseenter)="buttonEnter(levelOneTrigger)" (mouseleave)="buttonLeave(levelOneTrigger, button)" style="z-index:1050">
           <span class="icon fa" [ngClass]="menuItem.icon"></span>
-          <span class="text-holder">{{menuItem.label}}</span>
-        </a>
+          <span>{{menuItem.label}}
+            <i class="fa fa-chevron-down"></i>
+          </span>
+        </button>
       </ng-container>
       <ng-container *ngIf="menuItem.children.length > 0">
     <button #button mat-button [matMenuTriggerFor]="levelOne" #levelOneTrigger="matMenuTrigger" (mouseenter)="buttonEnter(levelOneTrigger)" (mouseleave)="buttonLeave(levelOneTrigger, button)" style="z-index:1050">

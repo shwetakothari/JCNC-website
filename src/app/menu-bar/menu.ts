@@ -1,29 +1,85 @@
 export const ModulesList = [{
-    label: 'User',
+    label: 'Home',
     children: [{
-      label: 'User 1'
+      label: 'About Us'
     }, {
-      label: 'User 2'
+      label: 'News'
+    }]
+  },
+  {
+    label: 'Virtual Laabh',
+    children: [{
+      label: 'Webcast Live'
     }, {
-      label: 'User 3'
+      label: 'Virtual Laabh'
+    }]
+  }, 
+  {
+    label: 'Contact Us',
+    children: [{
+      label: 'Directions'
+    },{
+      label: 'Board of Directors'
+    },{
+      label: 'Executive Committe'
     }, {
-      label: 'User 4'
+      label: 'JCNC policy'
     }]
   }, {
-    label: 'Management',
+    label: 'Membership',
     children: [{
-      label: 'Management 1'
+      label: 'Newsletter'
+    }, {
+      label: 'Life Time Support program'
+    }, {
+      label: 'Forms'
+    }, {
+      label: 'Volunteering'
     }]
-  }, {
-    label: 'Admin',
+  },
+  {
+    label: 'Events and Causes',
     children: [{
-      label: 'Admin 1'
+      label: 'Calendar'
     }, {
-      label: 'Admin 2'
+      label: 'Mahavir Janm Kalyanak'
     }, {
-      label: 'Admin 3'
+      label: 'Request for Scheduling'
     }, {
-      label: 'Admin 4'
+      label: 'Jivadaya'
+    }, 
+    {
+      label: 'Tithi Program'
+    },
+    {
+      label: 'JCNC Youth Service Award'
     }]
+  }, 
+  {
+    label: 'Book events',
+    children: [{
+      label: 'Short term premise use'
+    }, {
+      label: 'Booking calendar'
+    }]
+  },
+  {
+    label: 'Archives and reports',
+    children: [{
+      label: 'Photos and videos'
+    }, {
+      label: 'Expense report'
+    }]
+  },
+  {
+    label: 'Other Links',
+    children: [{
+      label: 'Photos and videos'
+    }, {
+      label: 'Expense report'
+    }]
+  },
+  {
+    label: 'Donate',
   }];
   
