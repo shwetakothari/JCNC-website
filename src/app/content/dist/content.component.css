@@ -1,0 +1,16 @@
+.main {
+  padding: 5% 13%;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  line-height: 1.7;
+  columns: #555555;
+  font-weight: 400;
+}
+.main .title {
+  font-size: 2rem;
+  padding-bottom: 3%;
+  display: block;
+  text-align: center;
+}
+.main .content {
+  font-size: 1rem;
+}

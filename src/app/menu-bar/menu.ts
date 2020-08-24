@@ -80,6 +80,7 @@ export const ModulesList = [{
     }]
   },
   {
-    label: 'Donate',
-  }];
+    label: 'Donate'
+  }
+  ];
   

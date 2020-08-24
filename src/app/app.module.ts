@@ -11,13 +11,15 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatIconModule} from '@angular/material/icon';
 import {MatMenuModule} from '@angular/material/menu';
 import {MatButtonModule} from '@angular/material/button';
+import { ContentComponent } from './content/content.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     AlertComponent,
-    MenuBarComponent
+    MenuBarComponent,
+    ContentComponent
   ],
   imports: [
     BrowserModule,

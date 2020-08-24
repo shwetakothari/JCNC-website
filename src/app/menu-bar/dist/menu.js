@@ -84,4 +84,5 @@ exports.ModulesList = [{
     },
     {
         label: 'Donate'
-    }];
+    }
+];
